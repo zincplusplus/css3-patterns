@@ -80,7 +80,7 @@ $currentPage = $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
         <!-- end CSS-->
     </head>
 
-    <body class="<?php echo $browser; if(isset($issingle)) { echo ' single'; } else { echo ' index'; } ?>" >
+    <body class="<?php echo $browser; if(isset($issingle)) { echo ' single'; } else if(isset($is404)) { echo ' transparent'; } else { echo ' index'; } ?>" >
 
         <div id="fb-root"></div>
         <script>(function(d, s, id) {

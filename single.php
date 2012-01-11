@@ -1,14 +1,18 @@
 <?php require("layout/pattern-list.php"); ?>
 
-<?php 
+<?php
+$id=$_GET["id"];
+
+if(!isset($stack[$id])){
+     require("404.php");
+} else {
+
+
 /* -----------------------------------------------------------------------------
  * if we are on the single pattern page
  * -------------------------------------------------------------------------- */
 $issingle = true;
-?>
 
-<?php
-$id=$_GET["id"];
 $row = $stack[$id];
 /* -----------------------------------------------------------------------------
  * get prev and next links
@@ -164,3 +168,4 @@ else {                                      //it's somewhere in the middle of th
     <?php 
 ?>
 <?php include('layout/footer.php'); ?>
+<?php } ?>

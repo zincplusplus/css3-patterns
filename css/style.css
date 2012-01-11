@@ -174,6 +174,23 @@ hgroup {
     margin-right: 3px;
 }
 /* -----------------------------------------------------------------------------
+ * pattern list for 404 page
+ * -------------------------------------------------------------------------- */
+ #pattern-list-404 li {
+     border-bottom: 1px solid #dedede;
+     display: block;
+     list-style: inside disc;
+     padding: 5px 0;
+ }
+ #pattern-list-404 li:last-child {
+     border-bottom: none;
+ }
+ #pattern-list-404 a {
+     color: #09c;
+     font-weight: bold;
+     text-decoration: none;
+ }
+/* -----------------------------------------------------------------------------
  * Single
  * -------------------------------------------------------------------------- */
  .single {
@@ -751,6 +768,17 @@ font-size: 1px;
     left: 130px;
 }
 /* -----------------------------------------------------------------------------
+ * transparent
+ * -------------------------------------------------------------------------- */
+ .transparent,
+ #transparent {
+background-color: #fff;
+background-image: linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%), linear-gradient(45deg, #ccc 25%, transparent 25%,transparent 75%, #ccc 75%);
+background-size:16em 16em;
+background-position:0 0, 8em 8em;
+font-size: 1px;
+ }
+/* -----------------------------------------------------------------------------
  * Buttons
  * -------------------------------------------------------------------------- */
 .button3 {
@@ -913,3 +941,14 @@ font-size: 1px;
     color: #ffcc00;
     text-decoration: underline;
 }
+/* -----------------------------------------------------------------------------
+ * 404 page
+ * -------------------------------------------------------------------------- */
+ #p404 {
+     background: #fff;
+     border-radius: 15px;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
+     margin: 40px auto;
+     padding: 20px;
+     width: 400px;
+ }
