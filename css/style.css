@@ -1,0 +1,915 @@
+/*
+* gist to dabblet
+* Author: eCSSpert
+* URL: http://www.ecsspert.com
+*/
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/bebas-neue-fontfacekit/BebasNeue-webfont.eot');
+    src: url('../fonts/bebas-neue-fontfacekit/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/bebas-neue-fontfacekit/BebasNeue-webfont.woff') format('woff'),
+        url('../fonts/bebas-neue-fontfacekit/BebasNeue-webfont.ttf') format('truetype'),
+        url('../fonts/bebas-neue-fontfacekit/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body.index {	
+    background: url(../images/wood.jpg);
+    box-sizing: border-box;
+    min-height: 100%;
+    position: relative;
+}
+#content {
+    font-family: Helvetica, Arial, sans;
+    font-size: 12px;
+}
+/* -----------------------------------------------------------------------------
+ * header
+ * -------------------------------------------------------------------------- */
+hgroup {
+    background-color: #e30404;
+    background-image: linear-gradient(left, rgba(0,0,0,.1), transparent);   /* texture */
+    background-size: 4px 1px;
+    box-shadow: 0 -1px 2px 0 rgba(0,0,0,.5);
+    color: #fff;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+.xribbon,
+.xtitle {
+    font-family: "BebasNeueRegular", Arial, serif;
+}
+.xribbon {
+    border: 1px dashed #fc0;
+    border-left: 0 none;
+    border-right: 0 none;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+}
+.xtitle {
+    font-size: 64px;
+}
+.xribbon .xheader {
+    margin: 0 1em;
+    position: relative;
+}
+.xtitle { 
+    color: #fff;
+    font-weight: bold;
+    height: 1.4em;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    z-index: 100;
+
+}
+.xribbon .xtitle {
+    padding: 0 1em;
+}
+.xribbon .xheader .xtitle:before,
+.xribbon .xheader .xtitle:after {
+    color: #fc0;
+    content: "*";
+    display: block;
+    font-size: 0.4em;
+    font-weight: normal;
+    height: 1px;
+    line-height: 3.2em;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.3);
+    top: 0;
+    width: 2.5em;
+}
+.xribbon .xheader .xtitle:before {
+    left: 0px;
+}
+.xribbon .xheader .xtitle:after {
+    right: 0px;
+}
+.xribbon .xtagline {
+    font-size: 1.7em;
+    margin: 0 0 0.125em 0;
+    opacity: 0.8;
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+}
+/* -----------------------------------------------------------------------------
+ * Pattern list
+ * -------------------------------------------------------------------------- */
+#pattern-list {
+    padding-top: 40px;
+    margin: 0 auto;
+    width:1080px;
+}
+#pattern-list li,
+#pattern-list li .pattern {
+    display: block;
+    font-family: "BebasNeueRegular", Arial, serif;
+    height: 300px;
+    position: relative;
+    text-decoration: none;
+    width: 300px;
+}
+#pattern-list li {
+    background: url(../images/heart-shadow.png) no-repeat 50% 0px;
+    display: block;
+    float: left;
+    height: 370px;
+    padding: 30px;
+    width: 300px;
+}
+.opera #pattern-list li {
+    background: none;
+}
+#pattern-list li .pattern:hover:after {
+    background: rgba(0,0,0,.7);
+    box-shadow: 0 0 5px 0 rgba(255,255,255,.5);
+    border-radius: 5px;
+    color: #fff;
+    content: "Full view";
+    display: block;
+    font-size: 18px;    
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 0;
+    position: absolute;
+    left: 90px;
+    text-align: center;
+    top: 110px;
+    width: 120px;
+}
+#pattern-list .title {
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.4),
+        0 2px 0 0 rgba(255,255,255,.2);
+    color: #fff;
+    font-size: 30px;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 1px black;
+}
+#pattern-list li .pattern {
+    height: 290px;
+    mask-image: url(../images/heart.png);
+    width: 300px;
+}
+#pattern-list .social {
+    opacity: 0.5;
+}
+
+#pattern-list li:hover .social,
+#pattern-list .social:hover {
+    opacity: 1;
+}
+.fb-like {
+    box-shadow: 1px 0 0 0 rgba(0,0,0,0.4),
+        2px 0 0 0 rgba(255,255,255,.2);
+    top: -3px;
+    margin-right: 3px;
+}
+/* -----------------------------------------------------------------------------
+ * Single
+ * -------------------------------------------------------------------------- */
+ .single {
+     overflow: scroll;
+ }
+ .opera.single {
+     height: 1px;
+ }
+ .single hgroup {
+     background: none;
+     box-shadow: none;
+ }
+ .single .xribbon {
+     border: 0 none;
+ }
+ .single .social {
+     left: 20px;
+     position: relative;
+     top: 10px;
+ }
+ .single .fb-like {
+     display: block;
+     box-shadow: none;
+     margin: 0;
+ }
+ .single #disclaimer {
+     bottom: 0;
+     box-sizing: border-box;
+     position: fixed;
+     width: 100%;
+ }
+/* -----------------------------------------------------------------------------
+ * Code editor
+ * -------------------------------------------------------------------------- */
+ #editor {
+     bottom: 30px;
+     box-sizing: border-box;
+     padding: 10px;
+     position: fixed;
+     width: 100%;
+ }
+ #editor .editor-control {
+     color: #fff;
+     display: block;
+     float: left;
+     font-family: "BebasNeueRegular", Arial, serif;
+     font-size: 18px;
+     margin-left: 10px;
+     text-decoration: none;
+ }
+ #editor #hide,
+ #single-content {
+     background: rgba(0,0,0, .8);
+     padding: 10px;
+ }
+ #editor #code {
+     border: 1px solid #000;
+     box-sizing: border-box;
+     display: block;
+     font-size: 16px;
+     font-family: Monaco, monospace;
+     line-height: 1.7em;
+     margin-bottom: 10px;
+     padding: .5em;
+     resize: vertical;
+     width: 100%;
+ }
+ #editor p {
+     color: #DDD;
+ }
+ #editor .xtitle {
+     font-size: 64px;
+     line-height: 1em;
+ }
+/* -----------------------------------------------------------------------------
+ * Navigation
+ * -------------------------------------------------------------------------- */
+.home,
+.prev,
+.next {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    text-indent: -9999px;
+    top: 13px;
+    width: 50px;
+    z-index: 999;
+}
+.home:before,
+.home:after,
+.prev:before,
+.prev:after,
+.next:before,
+.next:after{
+    background: #FFF;
+    border-radius:2px;
+    content: "#";
+    display: block;
+    height: 8px;
+    position: absolute;
+    text-indent: -9999px;
+    width: 20px;
+}
+.prev {
+    box-shadow: 1px 0 0 0 rgba(255,255,255,.1);
+}
+.prev:before {
+    left:13px;
+    top:17px;
+    transform:rotate(-45deg);
+}
+.prev:after {
+    left:13px;
+    top:25px;
+    transform:rotate(45deg);
+}
+.next {
+    box-shadow: -1px 0 0 0 rgba(255,255,255,.1);
+}
+.next:before {
+    left:16px;
+    top:16px;
+    transform:rotate(45deg);
+}
+.next:after {
+    left:16px;
+    top:26px;
+    transform:rotate(-45deg);
+}
+.home {
+    border: 11px solid transparent;
+    border-top-width: 19px;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    box-shadow: 0 0 0 20px #fff inset;
+    box-sizing: border-box;
+    opacity: 0.2;
+}
+.home:hover {
+    opacity: 1;   
+}
+.home:before {
+    left:-9px;
+    top:-2px;
+    transform:rotate(-45deg);
+    width: 25px;
+}
+.home:after {
+    left:4px;
+    top:-2px;
+    transform:rotate(45deg);
+    width: 25px;
+}
+/* -----------------------------------------------------------------------------
+ * Patterns
+ * -------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------
+ * kremlin
+ * -------------------------------------------------------------------------- */
+#kremlin {
+background: linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.1) 50%) 20em 0em, linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.2) 50%) 20em 0em, linear-gradient(45deg, transparent 10%, green 10%, green 35%, transparent 35%, transparent 60%, green 60%, green 85%, transparent 85%);
+background-size: 50em 50em, 50em 50em, 100em 100em;
+background-color: yellow;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * kremlin2
+ * -------------------------------------------------------------------------- */
+#kremlin2 {
+background: linear-gradient(-45deg, transparent 50%, rgba(0,0,0,0.05) 50%), linear-gradient(45deg, transparent 50%, rgba(255,255,255,0.2) 50%), linear-gradient(315deg, red 0%, red 25%, transparent 25%) -50px 0, linear-gradient(225deg, red 0%, red 25%, transparent 25%) -50px 0, linear-gradient(135deg, red 0%, red 25%, transparent 25%), linear-gradient(45deg, red 0%, red 25%, transparent 25%);	
+background-size: 50em 50em, 50em 50em, 100em 100em, 100em 100em, 100em 100em, 100em 100em;
+background-color: white;
+font-size: 1px;  
+}
+/* -----------------------------------------------------------------------------
+ * leopard
+ * -------------------------------------------------------------------------- */
+#leopard {
+background: radial-gradient(circle, #3F2204 20%, transparent 20%) 0em 51em, radial-gradient(circle, #3F2204 21%, transparent 21%) 67em 10em, radial-gradient(circle, #472b0e 20%, transparent 20%) 145em 0em, radial-gradient(circle, #3F2204 17%, transparent 17%) -8em 60em, radial-gradient(circle, #3F2204 20%, transparent 20%) 66em 21em, radial-gradient(circle, #472b0e 22%, transparent 22%) 120em 84em, radial-gradient(circle, #472b0e 18%, transparent 18%) -1em 155em, radial-gradient(circle, #3F2204 20%, transparent 20%) 71em 135em, radial-gradient(circle, #3F2204 20%, transparent 20%) 81em 140em, radial-gradient(circle, #d18c41 0%, #D19441 1000%);
+background-size: 200em 200em;
+background-color: #D19441;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * fashion
+ * -------------------------------------------------------------------------- */
+#fashion {
+background: linear-gradient(15deg, rgba(0,0,0,.1), rgba(255,255,255,.1) 25%, rgba(0,0,0,.1) 50%, rgba(255,255,255,.1) 75%, rgba(0,0,0,.1)), radial-gradient(circle, #254383 8%, transparent 8%, transparent 30%, #254383 30%, #254383 35%, transparent 35%), radial-gradient(circle, #254383 6%, transparent 6%) 25em 25em;
+background-size: 100% 100%, 50em 50em, 50em 50em;
+background-color: #112564;
+font-size:1px;
+}
+/* -----------------------------------------------------------------------------
+ * twisted
+ * -------------------------------------------------------------------------- */
+#twisted {
+background: linear-gradient(-45deg, transparent 49%, rgba(0,0,0,0.1) 49%, rgba(0,0,0,0.2) 50%, #ffff00 50%, #ffcc00 63%, transparent 63%) 34em 0, linear-gradient(-45deg, transparent 48%, rgba(0,0,0,0.2) 48%, rgba(0,0,0,0.2) 50%, #ff5300 50%, #ff3300 63%, rgba(0,0,0,0.1) 63%, rgba(0,0,0,0.1) 64%, transparent 64%) 60em 0, linear-gradient(45deg, transparent 50%, #ffcc00 50%, #ffcc00 63%, transparent 63%) -26em 0, linear-gradient(45deg, transparent 50%, #ff3300 50%, #ff3300 63%, transparent 63%);
+background-color: #333;
+background-size: 120em 60em;
+font-size: 5px;
+}
+/* -----------------------------------------------------------------------------
+ * carbon-fiber
+ * -------------------------------------------------------------------------- */
+#carbon-fiber {
+background: radial-gradient(circle, #231d18 25%, transparent 25%) 3em 3em, radial-gradient(circle, #3f3932 25%, transparent 25%) 3em 4em, radial-gradient(circle, #231d18 25%, transparent 25%), radial-gradient(circle, #3f3932 25%, transparent 25%) 0 1em; 
+background-size: 6em 6em;
+background-color: #38322b;
+font-size: 1.5px;
+}
+/* -----------------------------------------------------------------------------
+ * christmass-present
+ * -------------------------------------------------------------------------- */
+#christmass-present {
+background: linear-gradient(135deg, transparent 85%, red 85%) 72em -27em, linear-gradient(315deg, transparent 85%, red 85%) 29em -70em, radial-gradient(circle, red 40%, transparent 40%) 50em 51em, linear-gradient(45deg, transparent 67%, red 85%) 29em 73em, linear-gradient(225deg, transparent 67%, red 85%) 72em -70em, linear-gradient(135deg, transparent 67%, red 85%) 72em -27em, linear-gradient(315deg, transparent 67%, red 85%) 29em -70em, linear-gradient(135deg, transparent 36%, white 36%, white 63%, transparent 63%), linear-gradient(45deg, transparent 36%, white 36%, white 63%, transparent 63%);
+background-size: 100em 100em;
+background-color: red;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * canvas
+ * -------------------------------------------------------------------------- */
+#canvas {
+background-color: #dedede;
+background-image: linear-gradient(45deg, transparent 40%, #dedede 40%, #dedede 50%, transparent 50%, transparent 90%, #dedede 90%), linear-gradient(-45deg, transparent 40%, rgba(0,0,0,.1) 40%, rgba(0,0,0,.1) 50%, transparent 50%, transparent 90%, rgba(0,0,0,.1) 90%), linear-gradient(-45deg, transparent 30%, rgba(255,255,255,.2) 30%, rgba(255,255,255,.2) 40%, transparent 40%, transparent 80%, rgba(255,255,255,.2) 80%, rgba(255,255,255,.2) 90%, transparent 90%);
+background-size: 10em 10em;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * snowlakes
+ * -------------------------------------------------------------------------- */
+#snowflakes {
+background: linear-gradient(90deg, transparent 43%, rgba(255,255,255,.3) 43%, rgba(255,255,255,.3) 57%, transparent 57%) 0 5em, radial-gradient(circle, transparent 40%, red 40%, red 96%, transparent 96%) -50em -45em, linear-gradient(0, transparent 40%, #fff 40%, #fff 60%, transparent 60%) 25em 25em, linear-gradient(90deg, transparent 40%, #fff 40%, #fff 60%, transparent 60%) 25em 30em, linear-gradient(45deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%) 26em 30em, linear-gradient(135deg, transparent 42%, #fff 42%, #fff 58%, transparent 58%)  25em 30em;
+background-size: 100em 100em,100em 100em, 50em 50em, 50em 50em, 50em 50em, 50em 50em;
+background-color: red;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * cute-skull
+ * -------------------------------------------------------------------------- */
+#cute-skull {
+background: radial-gradient(circle, #F4DE37 2%, transparent 2%) 45em 15em, radial-gradient(circle, #F4DE37 2%,  transparent 2%) 55em 15em, radial-gradient(circle, #F4DE37 10%, transparent 10%) 30em -5em, radial-gradient(circle, #F4DE37 8%,  transparent 8%) 70em -5em, radial-gradient(circle, #F46837 40%, transparent 40%) 50em -30em, radial-gradient(circle, #F46837 20%, transparent 20%) 50em 10em, radial-gradient(circle, #F46837 8%,  transparent 8%) 100em 39em, radial-gradient(circle, #F46837 8%,  transparent 8%) 90em 30em, radial-gradient(circle, #F46837 8%,  transparent 8%) 0em 39em, radial-gradient(circle, #F46837 8%,  transparent 8%) 6em 30em, radial-gradient(circle, #F46837 8%,  transparent 8%) 100em 79em, radial-gradient(circle, #F46837 8%,  transparent 8%) 94em 90em, radial-gradient(circle, #F46837 8%,  transparent 8%) 0em 79em, radial-gradient(circle, #F46837 8%,  transparent 8%) 6em 90em, linear-gradient(0, transparent 50%,  #F4DE37 50%) 100em 0, linear-gradient(90deg, transparent 50%, #F4DE37 50%) 90em 0, linear-gradient(60deg, transparent 46%, #F46837 46%, #F46837 54%, transparent 54%) 100em 10em, linear-gradient(-60deg, transparent 46%, #F46837 46%, #F46837 54%, transparent 54%) 100em 10em;
+background-size: 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 200em 200em, 100em 100em, 100em 100em;
+background-color: #F4DE37;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * vintage-green
+ * -------------------------------------------------------------------------- */
+#vintage-green {
+background: linear-gradient(27deg, transparent 48%, rgba(0,0,0,0.5) 48%, transparent 49%), linear-gradient(-27deg, transparent 48%, rgba(0,0,0,0.5) 48%, transparent 49%);
+background-color: #00906f;
+background-size: 20em 40em;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * hispter-love
+ * -------------------------------------------------------------------------- */
+#hipster-love {
+background: radial-gradient(circle, #f30 0%, #f30 19%, #f30 33%, transparent 33%) 17em 8em, radial-gradient(circle, #f30 0%, #f30 19%, #f30 33%, transparent 33%) 83em 8em, radial-gradient(circle, #f30 10%, transparent 10%) 50em 40em, linear-gradient(225deg, #f30 18%, transparent 18%) 150em 111em, linear-gradient(315deg, #f30 18%, transparent 18%) 150em 111em;
+background-size: 200em 150em;
+background-color: #49BAC3;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * paranoia
+ * -------------------------------------------------------------------------- */
+#paranoia {
+background: radial-gradient(circle, rgba(255,255,255,.8) 4%, transparent 4%) 84em -13em, radial-gradient(circle, black 8%, transparent 8%) 95em -2em, radial-gradient(circle, rgba(255,255,255,.4) 16%, transparent 10%) 75em -22em, radial-gradient(circle, #94caf0 16%, transparent 10%) 95em -2em, radial-gradient(circle, white 24%, #dedede 31%, transparent 26%) 95em -2em, radial-gradient(circle, rgba(255,255,255,.8) 4%, transparent 4%) -116em -13em, radial-gradient(circle, black 8%, transparent 8%) -105em -2em, radial-gradient(circle, rgba(255,255,255,.4) 16%, transparent 10%) -125em -22em, radial-gradient(circle, #94caf0 16%, transparent 10%) -105em -2em, radial-gradient(circle, white 24%, #dedede 31%, transparent 26%) -105em -2em;
+background-color: #fc0;
+background-size: 450em 260em;
+font-size: .8px;
+}
+/* -----------------------------------------------------------------------------
+ * Geek
+ * -------------------------------------------------------------------------- */
+#geek {
+background: linear-gradient(-45deg, transparent 25%, rgba(255,255,255,.2) 25%, rgba(255,255,255,.2) 50%, transparent 50%, transparent 75%, rgba(255,255,255,.2) 75%), linear-gradient(45deg, transparent 25%, rgba(255,255,255,.2) 25%, rgba(255,255,255,.2) 50%, transparent 50%, transparent 75%, rgba(255,255,255,.2) 75%);
+background-color: #009997;
+background-size: 200em 200em;
+font-size: .5px;
+}
+/* -----------------------------------------------------------------------------
+ * forest
+ * -------------------------------------------------------------------------- */
+#forest {
+background: linear-gradient(150deg, #48987f 22%, transparent 22%) 0em -40em, linear-gradient(29deg, #48987f 22%, transparent 22%) 0em -40em, linear-gradient(150deg, #48987f 32%, transparent 30%), linear-gradient(29deg, #48987f 32%, transparent 30%);
+background-color: #02e3a9;
+background-size: 100em 100em;
+font-size: 1px;
+}
+/* -----------------------------------------------------------------------------
+ * penrose triangle
+ * -------------------------------------------------------------------------- */
+ #penrose-triangle {
+background: /*yes, I know, this is a tone of code, but it was fun to make!*/
+/* the masks */
+linear-gradient(25deg, #1e4a9f 5%, transparent 5%) 93em -5em, linear-gradient(332deg, #1e4a9f 5%, transparent 5%) 92em -60em, linear-gradient(208deg, #1e4a9f 5%, transparent 5%) 1em -62em, linear-gradient(156deg, #1e4a9f 5%, transparent 5%) 3em -10em, linear-gradient(0, #1e4a9f 47%, transparent 47%), linear-gradient(90deg, #1e4a9f 10%, transparent 10%, transparent 75%, #1e4a9f 75%),
+/* the shape*/
+linear-gradient(-28deg, transparent 83%, #ffa000 83%, #ffa000 88%, transparent 88%) 138em 180em, linear-gradient(225deg, #ffc100 25%, transparent 25%) 45em -36em, linear-gradient(225deg, #fae800 25%, transparent 25%) 45em -54em, linear-gradient(-152deg, transparent 85%, #ffa000 85%, #ffa000 90%, transparent 81%) 138em 168em, linear-gradient(28deg, transparent 80%, #fae800 80%, #fae800 86%, transparent 86%) 199em 82em, linear-gradient(90deg, transparent 82%, #ffc100 82%, #ffc100 90%, transparent 90%) 0em 144em, linear-gradient(-28deg, transparent 83%, #ffc100 83%, #ffc100 89%, transparent 89%) 151em 184em, linear-gradient(90deg, transparent 11%, #fae800 11%, #fae800 20%, transparent 10%) 0 -14em;
+background-color: #1e4a9f;
+background-size: 200em 200em;
+font-size: 1px;
+ }
+/* -----------------------------------------------------------------------------
+ * Default logo CSS
+ * -------------------------------------------------------------------------- */
+.canvas { 
+    display: block;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    text-indent:-9999px;
+    z-index: 10;
+}
+.icon, .icon * {
+    display: block;
+    position: absolute;
+}
+/* -----------------------------------------------------------------------------
+ * Dribbble logo
+ * -------------------------------------------------------------------------- */
+ #dribbble .canvas {
+    background: #434950;
+}
+#dribbble .icon {
+    background: #f05e95;
+    border-radius:50%;
+    height: 250px;
+    left: 120px;
+    top: 2px;
+    transform:scale(0.7);
+    width: 250px;
+}
+.dribbble1 {
+    background: #F58FB5;
+    border-radius: 50%;
+    height: 132px;
+    left: 37px;
+    top: 8px;
+    transform: rotate(12deg);
+    width: 200px;
+}
+#dribbble .icon, .dribbble2, .dribbble3, .dribbble4 {
+    border:25px solid #cb386f;
+}
+.dribbble2 {
+    border-radius: 50%;
+    clip: rect(0px,200px,140px,0);
+    height: 309px;
+    left: 53px;
+    top: 108px;
+    width: 356px;
+}
+.dribbble3 {
+    border-radius: 50%;
+    clip: rect(230px, 390px, 360px, 180px);
+    height: 309px;
+    left: -192px;
+    top: -234px;
+    width: 353px;
+}
+.dribbble4 {
+    border-radius: 50%;
+    clip: rect(0, 1088px, 184px, 850px);
+    height: 1164px;
+    left: -1054px;
+    top: -207px;
+    transform: rotate(30deg);
+    width: 1248px;
+}
+/* -----------------------------------------------------------------------------
+ * Twitter logo
+ * -------------------------------------------------------------------------- */
+#twitter .canvas { 
+    background: #33ccff ;
+}
+#twitter .canvas .icon { 
+    height: 200px;
+    left: 125px;
+    position: absolute;
+    top: 52px;
+    width: 290px;
+}
+#twitter .canvas .draw { 
+    background: white;
+}
+#twitter .canvas .mask { 
+    background: #33ccff;
+}
+.twitter1,
+.twitter3 { 
+    border-radius:56px/33px;
+    height:33px;
+    width:56px;
+}
+.twitter1 { 
+    clip: rect(17px 70px 40px 0);
+    left: 234px;
+    top: 72px;
+    transform: skewy(-4deg);
+}
+.twitter3 { 
+    clip:rect(18px 70px 40px 0);
+    left:232px;
+    top:56px;
+    transform: skewy(-5deg);
+}
+.twitter2,
+.twitter4 { 
+    border-radius:38px/10px;
+    height: 10px;
+    width:38px;
+}
+.twitter2 { 
+    left:254px;
+    top:83px;
+    transform:rotate(5deg);
+}
+.twitter4 { 
+    left:251px;
+    top:67px;
+}
+.twitter5 { 
+    border-radius: 148px;
+    clip: rect(0 150px 72px 60px);
+    height: 148px;
+    left: 109px;
+    top: 16px;
+    width: 148px;
+}
+.twitter6 { 
+    border-radius: 258px/167px;
+    bottom: 0;
+    clip: rect(50px 130px 170px 0px);
+    height: 167px;
+    left: -5px;
+    width: 258px;
+}
+.twitter7 { 
+    border-radius: 259px/208px;
+    bottom: 0;
+    clip: rect(91px 260px 220px 127px);
+    height: 208px;
+    left: -3px;
+    transform: skewx(-5deg);
+    width: 259px;
+}
+.twitter8 { 
+    border-radius: 149px;
+    height: 149px;
+    left: -22px;
+    top: 16px;
+    width: 149px;
+}
+.twitter9, .twitter10 { 
+    border-radius: 63px/157px;
+    height: 157px;
+    width: 63px;
+}
+.twitter9 { 
+    clip:rect(49px 20px 160px 0px);
+    left: 149px;
+    top: -20px;
+    transform: rotate(27deg);
+}
+.twitter10 { 
+    clip:rect(26px 20px 50px 0px);
+    left: 149px;
+    top: -20px;
+    transform: rotate(27deg);
+}
+.twitter11 { 
+    height: 10px;
+    left: 182px;
+    top: 3px;
+    transform: rotate(20deg);
+    width: 10px;
+}
+.twitter12 { 
+    border-radius: 8px/30px;
+    height: 30px;
+    left: 198px;
+    top: -3px;
+    transform: rotate(66deg);
+    width: 8px;
+}
+.twitter13 { 
+    border-radius: 7px 13px 0 0/64px;
+    height: 44px;
+    left: 180px;
+    top: -8px;
+    transform: rotate(53deg);
+    width: 9px;
+}
+.twitter14 { 
+    border-radius: 27px 137px 137px 137px/50px;
+    clip: rect(0 130px 7px 14px);
+    height: 50px;
+    left: 29px;
+    top: 47px;
+    transform: rotate(24deg) skewx(32deg);
+    width: 137px;
+}
+.twitter15 { 
+    border-radius: 36px/58px;
+    clip: rect(14px 8px 60px 0);
+    height: 58px;
+    left: 48px;
+    top: 5px;
+    transform: rotate(-31deg);
+    width: 36px;
+}
+.twitter16 {
+    clip: rect(0px 30px 3px 0);
+    border-radius: 30px/10px;
+    height: 10px;
+    left: 50px;
+    top: 59px;
+    width: 30px;
+}
+.twitter17   {
+    clip: rect(31px 76px 62px 0);
+    border-radius: 80px/62px;
+    height: 62px;
+    left: 51px;
+    top: 31px;
+    transform: skewx(10deg);
+    width: 80px;
+}
+.twitter18 {
+    clip: rect(0px 30px 7px 0);
+    border-radius: 30px/20px;
+    height: 20px;
+    left: 64px;
+    top: 91px;
+    width: 30px;
+}
+.twitter19 {
+    clip: rect(16px 40px 34px 0);
+    border-radius: 40px 40px 40px 40px/34px;
+    height: 34px;
+    left: 65px;
+    top: 81.5px;
+    transform: skewx(23deg);
+    width: 40px;
+}
+.twitter20 {
+    border-radius: 40px 60px/34px;
+    height: 34px;
+    left: 86px;
+    top: 109px;
+    transform: rotate(-20deg) skewx(10deg) scale(0.9);
+    width: 50px;
+}
+.twitter21 {
+    background: none !important;
+    border: 56px solid white;
+    border-right: 59px solid transparent;
+    border-top: 33px solid transparent;
+    height: 0;
+    left: 77px;
+    top: 30px;
+    transform: skewx(30deg);
+    width: 0;
+}
+.twitter22 {
+    background: none !important;
+    border: 20px solid transparent;
+    border-right-color: white;
+    border-bottom-color: white;
+    top: 54px;
+    left: 130px;
+}
+/* -----------------------------------------------------------------------------
+ * Buttons
+ * -------------------------------------------------------------------------- */
+.button3 {
+    background-image: linear-gradient(top,#09c,#016e92);
+    border-radius: 15px;
+    box-shadow: 0 1px 0 #00bbde inset;
+    border: 1px solid #016E92;
+    color: white !important;
+    padding: 5px 10px;
+    text-shadow: 0 1px 0 #016E92;
+}
+/* -----------------------------------------------------------------------------
+ * Fotoer
+ * -------------------------------------------------------------------------- */
+#footer {
+    background-image:linear-gradient(45deg, #111 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, #111 75%);
+    background-repeat: repeat-x;
+    background-size: 22px 20px;
+    color: #eee;
+    font: 12px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    margin-top: 50px;
+    position: relative;
+}
+#footer a {
+    color: #09c;
+    text-decoration: none;
+}
+#content-holder {
+    background-color: #111;
+    margin-top: 25px;
+    padding: 45px 20px 45px 20px;
+}
+#footer .w50 {
+    min-width: 580px;
+}
+#footer .w25 {
+    min-width: 280px;
+}
+#footer .column {
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+#footer .w25:nth-child(2) .column,
+#footer .w50:nth-child(1) .column,
+#footer .w50:nth-child(4) .column {
+    border-right: 1px solid #111;
+    box-shadow: 1px 0 0 rgba(255,255,255,0.1);
+    margin-right: 20px;
+}
+#footer .column h3 {
+    border-bottom: 1px dotted #aaa;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+#footer .column h3 {
+    color: #fff;
+}
+#footer .column .content p {
+    line-height: 21px;
+    padding-bottom: 15px;
+}
+#footer .column .content li {
+    list-style-position: outside;
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 3px 0;
+}
+#content-holder .social .column li {
+    list-style-type: none;
+    margin-left: 0;
+    margin-right: 5px;
+}
+#footer #ecsspert .smallicon {
+    border-radius: 7px;
+}
+#footer #ecsspert.fleft {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+#about .text {
+    column-count: 2;
+}
+#footer .smallicon,
+#footer .smallicon .canvas {
+    border-radius: 50%;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+#footer #twitter .smallicon .icon {
+    transform: scale(0.13);
+    transform-origin: 0 0;
+    transform-origin-x: 0px;
+    transform-origin-y: 0px;
+    left: 8px !important;
+    top: 12px !important;
+}
+#footer #dribbble .smallicon {
+    background-color: #CB386F;
+}
+#footer #dribbble .smallicon .icon {
+    transform: scale(0.16);
+    transform-origin: 0 0;
+    transform-origin-x: 0px;
+    transform-origin-y: 0px;
+    left: 1px !important;
+    top: 1px !important;
+}
+#footer .first-row .column {
+    height: 320px;
+}
+#footer .second-row .column {
+    margin-bottom: 0;
+}
+#subscribe .content p a {
+    color: #fff;
+}
+#resources li {
+    float:left;
+    width:270px;
+}
+#disclaimer {
+    background: #000;
+    color: #eee;
+    font-size: 12px;
+    padding: 10px 20px;
+}
+#disclaimer a {
+    color: #fff;
+}
+/* -----------------------------------------------------------------------------
+ * browser notice bar
+ * -------------------------------------------------------------------------- */
+ .browsernotice {
+    background-color: red;
+    border-bottom: 1px solid #c00;
+    color: #fff;
+    padding: 0 0 10px;
+    text-align: center;
+}
+.browsernotice h5,
+.browsernotice h6 {
+    margin:0 auto;
+    width:640px;
+}
+.browsernotice h5 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 40px;
+}
+.browsernotice h6,
+.browsernotice h3 {
+    font-size: 18px;
+}
+.browsernotice a {
+    color: #ffcc00;
+    text-decoration: underline;
+}
