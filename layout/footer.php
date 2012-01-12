@@ -7,10 +7,10 @@
                     <h3>About</h3>
                     <div class="content">
                         <div class="text">
-                            <p>What I've learned from <a href="http://www.ecsspert.com/play/css3-logos/" targe="_blank">CSS3 Logos</a>, is that having fun is the key to succes.</p>
-                            <p><strong>Why create something useless?</strong><br />Well they aren't actually useless! When I've started creating the patterns I told myself: enjoy what you are doing and create things that are evan useless if that's what it takes to make something beautifull.</p>
-                            <p><strong>Easy to adapt</strong><br />If you visit the page for each pattern you'll see that they are incredible easy to scale! But what if you want to change the colours? Just do a simple find-and-replace for 2-3 solid colours. 30 seconds tops!</p></p>
-                            <p><strong>Learning is fun</strong><br />Another thing, is that creating some complex looking patterns I was forced to learn allot about CSS3 and I've used some cool new stuff that I think will start you on your jorney to learning CSS3.</p>
+                            <p>What I've learned from <a href="http://www.ecsspert.com/play/css3-logos/" targe="_blank">CSS3 Logos</a> is that having fun is the key to succes.</p>
+                            <p><strong>Why create something useless?</strong><br />Well, they aren't actually useless! When I've started creating the patterns I've told myself: enjoy what you do and create things that might be useless if that's what it takes to make something beautiful.</p>
+                            <p><strong>Easy to adapt</strong><br />If you visit the page for each pattern you'll see that they are incredibly easy to scale! But what if you want to change the colours? Just do a simple find-and-replace for 2-3 solid colors. 30 seconds tops!</p></p>
+                            <p><strong>Learning is fun</strong><br />Another thing is that while creating some complex looking patterns I had to learn a lot about CSS3 and I've used some cool new stuff that I think will hellp you start learning CSS3.</p>
                         </div>
                     </div>
                 </div>
@@ -99,12 +99,12 @@
                     <h3>Submit your CSS3 Patterns</h3>
                     <div class="content">
                         <div class="text">
-                        <p>If you wan't to submit a pattern to the gallery, create it in <a href="http://dabblet.com/" target="_blank">Dabblet</a> and share the link via Twitter <a href="https://twitter.com/ecsspert" target="_blank">@ecsspert</a></p>
-                        <p>For a submited pattern to featured in the gallery it must be:
+                        <p>If you want to submit a pattern to the gallery, create it in <a href="http://dabblet.com/" target="_blank">Dabblet</a> and share the link via Twitter <a href="https://twitter.com/ecsspert" target="_blank">@ecsspert</a></p>
+                        <p>For a submited pattern to feature in the gallery it must be:
                         <ul>
                             <li>beautiful,</li>
                             <li>scalable - on UCP, all the patterns are scalable by changing the font-size,</li>
-                            <li>adaptable - the color scheme has to be easy to change (be carefull if you use gradients).</li>
+                            <li>adaptable - the color scheme has to be easy to change (be careful if you use gradients).</li>
                         </ul>
                         </p>
                         </div>

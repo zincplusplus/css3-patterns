@@ -7,7 +7,7 @@
         <h1 class="xheader">
             <span class="xtitle">Oups! This page seems to be missing</span>
         </h1>
-        <h2 class="xtagline">Until we find it, you cand start browsing through some existing patterns</h2>
+        <h2 class="xtagline">Until we find it, you can start browsing through some existing patterns</h2>
     </div>
 </hgroup>
 <div id="p404">
