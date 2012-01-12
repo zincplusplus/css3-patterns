@@ -15,10 +15,6 @@
     font-style: normal;
 
 }
-body {
-    min-width: 1080px;
-    overflow: scroll;
-}
 body.index {	
     background: url(../images/wood.jpg);
     box-sizing: border-box;

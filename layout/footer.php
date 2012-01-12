@@ -15,81 +15,79 @@
                     </div>
                 </div>
             </div>
-            <div class="w50 fleft">
-                <div class="w25 fleft">
-                    <div class="column">
-                        <h3>Inspiration</h3>
-                        <div class="content">
-                            <p>Here are some people, apps and websites that helped and inspired me when creating this page: </p>
-                            <ul>
-                                <li><a href="http://leaverou.github.com/prefixfree/" target="_blank">-prefix-free</a></li>
-                                <li><a href="http://dabblet.com" target="_blank">Dabblet</a></li>
-                                <li><a href="http://dribbble.com/shots/148018-Virtual-Agent-Pattern" target="_blank">Virtual Agent Pattern</a></li>
-                                <li><a href="http://dribbble.com/shots/186761-Clothing-shop-menu" target="_blank">Clothing shop menu</a></li>
-                                <li><a href="http://www.behance.net/gallery/Russian-vodka/332083" target="_blank">Russian vodka</a></li>
-                                <li><a href="http://phaedralonghurst.tumblr.com/post/15093048871" target="_blank">The fruitful field</a></li>
-                                <li><a href="http://lea.verou.me/css3patterns/" target="_blank">Lea Verou</a></li>
-                            </ul>
-                        </div> 
-                    </div>
+            <div class="w25 fleft">
+                <div class="column">
+                    <h3>Inspiration</h3>
+                    <div class="content">
+                        <p>Here are some people, apps and websites that helped and inspired me when creating this page: </p>
+                        <ul>
+                            <li><a href="http://leaverou.github.com/prefixfree/" target="_blank">-prefix-free</a></li>
+                            <li><a href="http://dabblet.com" target="_blank">Dabblet</a></li>
+                            <li><a href="http://dribbble.com/shots/148018-Virtual-Agent-Pattern" target="_blank">Virtual Agent Pattern</a></li>
+                            <li><a href="http://dribbble.com/shots/186761-Clothing-shop-menu" target="_blank">Clothing shop menu</a></li>
+                            <li><a href="http://www.behance.net/gallery/Russian-vodka/332083" target="_blank">Russian vodka</a></li>
+                            <li><a href="http://phaedralonghurst.tumblr.com/post/15093048871" target="_blank">The fruitful field</a></li>
+                            <li><a href="http://lea.verou.me/css3patterns/" target="_blank">Lea Verou</a></li>
+                        </ul>
+                    </div> 
                 </div>
+            </div>
 
-                <div class="social w25 fleft">
-                    <div class="column">
-                        <h3>Follow me</h3>
+            <div class="social w25 fleft">
+                <div class="column">
+                    <h3>Follow me</h3>
+                    <div class="content">
+                        <ul class="fbox">
+                            <li id="twitter" class="fleft">
+                                <a class="smallicon" href="http://twitter.com/ecsspert" target="_blank">
+                                    <span class="canvas">
+                                        <span class="icon">
+                                            <span class="twitter1 draw"></span>
+                                            <span class="twitter2 mask"></span>
+                                            <span class="twitter3 draw"></span>
+                                            <span class="twitter4 mask"></span>
+                                            <span class="twitter5 draw"></span>
+                                            <span class="twitter6 draw"></span>
+                                            <span class="twitter7 draw"></span>
+                                            <span class="twitter8 mask"></span>
+                                            <span class="twitter9 draw"></span>
+                                            <span class="twitter10 draw"></span>
+                                            <span class="twitter11 mask"></span>
+                                            <span class="twitter12 draw"></span>
+                                            <span class="twitter13 draw"></span>
+                                            <span class="twitter14 draw"></span>
+                                            <span class="twitter15 draw"></span>
+                                            <span class="twitter16 draw"></span>
+                                            <span class="twitter17 draw"></span>
+                                            <span class="twitter18 draw"></span>
+                                            <span class="twitter19 draw"></span>
+                                            <span class="twitter20 draw"></span>
+                                            <span class="twitter21 draw"></span>
+                                            <span class="twitter22 draw"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li id="dribbble" class="fleft">
+                                <a href="http://dribbble.com/ecsspert" target="_blank">
+                                    <span class="canvas smallicon">
+                                        <span class="icon">
+                                            <span class="dribbble1"></span>
+                                            <span class="dribbble2"></span>
+                                            <span class="dribbble3"></span>
+                                            <span class="dribbble4"></span>
+                                            <span class="dribbble5"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="subscribe">
+                        <h3 class="mar40t">Subscribe</h3>
                         <div class="content">
-                            <ul class="fbox">
-                                <li id="twitter" class="fleft">
-                                    <a class="smallicon" href="http://twitter.com/ecsspert" target="_blank">
-                                        <span class="canvas">
-                                            <span class="icon">
-                                                <span class="twitter1 draw"></span>
-                                                <span class="twitter2 mask"></span>
-                                                <span class="twitter3 draw"></span>
-                                                <span class="twitter4 mask"></span>
-                                                <span class="twitter5 draw"></span>
-                                                <span class="twitter6 draw"></span>
-                                                <span class="twitter7 draw"></span>
-                                                <span class="twitter8 mask"></span>
-                                                <span class="twitter9 draw"></span>
-                                                <span class="twitter10 draw"></span>
-                                                <span class="twitter11 mask"></span>
-                                                <span class="twitter12 draw"></span>
-                                                <span class="twitter13 draw"></span>
-                                                <span class="twitter14 draw"></span>
-                                                <span class="twitter15 draw"></span>
-                                                <span class="twitter16 draw"></span>
-                                                <span class="twitter17 draw"></span>
-                                                <span class="twitter18 draw"></span>
-                                                <span class="twitter19 draw"></span>
-                                                <span class="twitter20 draw"></span>
-                                                <span class="twitter21 draw"></span>
-                                                <span class="twitter22 draw"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                                <li id="dribbble" class="fleft">
-                                    <a href="http://dribbble.com/ecsspert" target="_blank">
-                                        <span class="canvas smallicon">
-                                            <span class="icon">
-                                                <span class="dribbble1"></span>
-                                                <span class="dribbble2"></span>
-                                                <span class="dribbble3"></span>
-                                                <span class="dribbble4"></span>
-                                                <span class="dribbble5"></span>
-                                            </span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="subscribe">
-                            <h3 class="mar40t">Subscribe</h3>
-                            <div class="content">
-                                <p>Get the latest news about other interesting stuff I do on <a class="fake" href="/">eCSSpert.com</a></p>
-                                <a href="http://eepurl.com/hyLWk" target="_blank" class="button3">Subscribe Now!</a>
-                            </div>
+                            <p>Get the latest news about other interesting stuff I do on <a class="fake" href="/">eCSSpert.com</a></p>
+                            <a href="http://eepurl.com/hyLWk" target="_blank" class="button3">Subscribe Now!</a>
                         </div>
                     </div>
                 </div>
