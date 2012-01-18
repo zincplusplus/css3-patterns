@@ -500,6 +500,20 @@ background-color: #1e4a9f;
 background-size: 200em 200em;
 font-size: 1px;
  }
+ /* -----------------------------------------------------------------------------
+  * alegria
+  * -------------------------------------------------------------------------- */
+#alegria {
+    background: 
+radial-gradient(99em 1em, circle, #ff0053 17%, transparent 1%) -75em 0em,radial-gradient(1em 99em, circle, #ffc000 17%, transparent 1%) -75em 25em,radial-gradient(1em 1em, circle, #ff0053 17%, transparent 1%) -75em 25em,radial-gradient(99em 99em, circle, #ffc000 17%, transparent 2%) -75em 50em,
+radial-gradient(99em 1em, circle, #ff0053 17%, transparent 1%) -75em 50em,radial-gradient(1em 99em, circle, #ffc000 17%, transparent 1%) -75em 75em,radial-gradient(1em 1em, circle, #ff0053 17%, transparent 1%) -75em 75em,radial-gradient(99em 99em, circle, #ffc000 17%, transparent 2%) -75em 0em,
+radial-gradient(99em 1em, circle, #ffc000 17%, transparent 1%) -25em 25em,radial-gradient(1em 99em, circle, #ff0053 17%, transparent 1%) -25em 50em,radial-gradient(1em 1em, circle, #ffc000 17%, transparent 1%) 75em 0em,radial-gradient(99em 99em, circle, #ff0053 17%, transparent 2%) -25em 25em,
+radial-gradient(99em 1em, circle, #ffc000 17%, transparent 1%) -25em 75em,radial-gradient(1em 99em, circle, #ff0053 17%, transparent 1%) -25em 0em,radial-gradient(1em 1em, circle, #ffc000 17%, transparent 1%) 75em 50em,radial-gradient(99em 99em, circle, #ff0053 17%, transparent 2%) -25em 75em,
+linear-gradient(45deg, #ff8f00 25%, transparent 25%, transparent 75%, #ff8f00 75%, #ff8f00) 0em 0em, linear-gradient(45deg, #ff8f00 25%, transparent 25%, transparent 75%, #ff8f00 75%, #ff8f00) 25em 25em;
+background-color: #792870;
+background-size: 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 50em 50em, 50em 50em;
+font-size: 1.5px;
+}
 /* -----------------------------------------------------------------------------
  * Default logo CSS
  * -------------------------------------------------------------------------- */
@@ -816,16 +830,16 @@ font-size: 1px;
     padding: 45px 20px 45px 20px;
 }
 #footer .w50 {
-    min-width: 580px;
+    min-width: 520px;
 }
 #footer .w25 {
-    min-width: 280px;
+    min-width: 260px;
 }
 #footer .column {
     margin-bottom: 20px;
     padding-right: 20px;
 }
-#footer .w25:nth-child(2) .column,
+#footer .w25:nth-child(1) .column,
 #footer .w50:nth-child(1) .column,
 #footer .w50:nth-child(4) .column {
     border-right: 1px solid #111;
