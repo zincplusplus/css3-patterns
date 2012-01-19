@@ -140,7 +140,11 @@ else {                                      //it's somewhere in the middle of th
      * -------------------------------------------------------------------------- */
     $('#reset').click(function(e){
         e.preventDefault();
-       $("#code").val($("#original").val()+"//change the scale of the pattern by modifying the font size (ex: font-size: 1.5px will increase it by 50%)").keyup();
+        var info = "";
+       if($("#original").val().indexOf("font-size")>=0) {
+            info = " //change the scale of the pattern by modifying the font size (ex: font-size: 1.5px will increase it by 50%)";
+       }
+       $("#code").val($("#original").val()+info).keyup();
     });
     /* -----------------------------------------------------------------------------
      * check if the editor shoud be seen
