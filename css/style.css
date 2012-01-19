@@ -128,7 +128,7 @@ hgroup {
 .opera #pattern-list li {
     background: none;
 }
-#pattern-list li .pattern:hover:after {
+#pattern-list li:hover .pattern:after {
     background: rgba(0,0,0,.7);
     box-shadow: 0 0 5px 0 rgba(255,255,255,.5);
     border-radius: 5px;
@@ -512,6 +512,17 @@ radial-gradient(99em 1em, circle, #ffc000 17%, transparent 1%) -25em 75em,radial
 linear-gradient(45deg, #ff8f00 25%, transparent 25%, transparent 75%, #ff8f00 75%, #ff8f00) 0em 0em, linear-gradient(45deg, #ff8f00 25%, transparent 25%, transparent 75%, #ff8f00 75%, #ff8f00) 25em 25em;
 background-color: #792870;
 background-size: 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 100em 100em, 50em 50em, 50em 50em;
+font-size: 1.5px;
+}
+/* -----------------------------------------------------------------------------
+ * pixels
+ * -------------------------------------------------------------------------- */
+#pixels {
+    background: 
+linear-gradient(180deg, rgba(255,0,102,0) 20%, rgba(255,0,102,.1) 20%, rgba(255,0,102,.1) 40%, rgba(255,0,102,.2) 40%, rgba(255,0,102,.2) 60%, rgba(255,0,102,.4) 60%, rgba(255,0,102,.4) 80%, rgba(255,0,102,.6) 80%),
+linear-gradient(-90deg, rgba(255,0,102,0) 20%, rgba(255,0,102,.1) 20%, rgba(255,0,102,.1) 40%, rgba(255,0,102,.2) 40%, rgba(255,0,102,.2) 60%, rgba(255,0,102,.4) 60%, rgba(255,0,102,.4) 80%, rgba(255,0,102,.6) 80%);
+background-color: #fc0;
+background-size: 100% 100%;
 font-size: 1.5px;
 }
 /* -----------------------------------------------------------------------------

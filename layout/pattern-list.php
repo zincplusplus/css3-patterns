@@ -85,3 +85,8 @@ $stack["alegria"] = array(
     "title" => "Alegria",
     "short" => "http://bit.ly/ypV7p1"
 );
+$stack["pixels"] = array(
+    "id" => "pixels",
+    "title" => "Pixels",
+    "short" => "http://bit.ly/AvZuBk"
+);
