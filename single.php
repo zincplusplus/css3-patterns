@@ -83,9 +83,9 @@ else {                                      //it's somewhere in the middle of th
                 <span class="xtitle"><?php echo $row['title']; ?></span>
             </h1>
             <div class="social fleft mar10b">
-                <div class="fb-like" data-href="http://www.ecsspert.com/play/useless-css3-patterns/<?php echo $row['id']; ?>.html" data-send="false" data-layout="button_count" data-width="150" data-show-faces="false"></div>
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php echo $row['short']; ?>" counturl="http://www.ecsspert.com/play/useless-css3-patterns/<?php echo $row['id']; ?>.html" data-text="<?php echo $row['title']; ?>, an useless #CSS3 pattern that I love!" data-via="ecsspert">Tweet</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <iframe src="//www.facebook.com/plugins/like.php?href=http://www.ecsspert.com/play/useless-css3-patterns/<?php echo $row['id']; ?>.html&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=143184445784558" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
             </div>
             <div class="fright">
                 <a class="prev" href="<?php echo $prev['id'];?>.html"><?php echo $prev['id'];?></a>

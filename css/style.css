@@ -217,11 +217,14 @@ hgroup {
      position: relative;
      top: 10px;
  }
- .single .fb-like {
-     display: block;
-     box-shadow: none;
-     margin: 0;
+ .single .social iframe {
+     display: block;   
  }
+ .single .social iframe:first-child {
+     margin-bottom: 3px;
+     margin-top: -2px;
+ }
+
  .single #disclaimer {
      bottom: 0;
      box-sizing: border-box;
